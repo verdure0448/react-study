@@ -5,5 +5,5 @@ jobs:
       - image: circleci/node:lts
     steps:
       - checkout
-      - run: npm ci
-      - run: npm test
+      - run: npm run build
+      - run: npm start

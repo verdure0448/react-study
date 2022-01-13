@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import MyComponent from './MyComponent'
 const App = () => {
-  return <MyComponent />;
+  return <MyComponent>React</MyComponent>;
 }
 
 

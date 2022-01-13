@@ -10,7 +10,7 @@ const MyComponent = ({name, children}) => {
     );
 };
 MyComponent.defaultProps = {
-    name: '철수'
+    name: '영희'
 }
 
 export default MyComponent;

@@ -1,19 +1,9 @@
-orbs:
-  react: 'thefrontside/react@dev:alpha'
 version: 2.1
-workflows:
-  push:
-    jobs:
-      - react/install
-      - react/eslint:
-          requires:
-            - react/install
-      - react/stylelint:
-          requires:
-            - react/install
-      - react/test:
-          requires:
-            - react/install
-      - react/coverage:
-          requires:
-            - react/install
+jobs:
+  build:
+    docker:
+      - image: circleci/node:lts
+    steps:
+      - checkout
+      - run: npm ci
+      - run: npm test

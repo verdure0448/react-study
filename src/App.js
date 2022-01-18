@@ -1,10 +1,10 @@
 // import logo from './logo.svg';
-import React from 'react';
-import './App.css';
-import MyComponent from './MyComponent'
-const App = () => {
-  return <MyComponent name="React" favoriteNum={3}>React</MyComponent>;
-}
+import React from "react";
+import "./App.css";
+import Counter from "./Counter";
 
+const App = () => {
+  return <Counter />;
+};
 
 export default App;

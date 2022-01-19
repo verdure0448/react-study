@@ -1,10 +1,10 @@
 // import logo from './logo.svg';
 import React from "react";
 import "./App.css";
-import EventPractice from "./EventPractice";
+import ValidationSample from "./ValidationSample";
 
 const App = () => {
-  return <EventPractice />;
+  return <ValidationSample />;
 };
 
 export default App;
